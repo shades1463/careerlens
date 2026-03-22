@@ -57,6 +57,6 @@ def test_chain_initializes_with_groq_model():
         with patch("app.chains.os.getenv", return_value="fake-api-key"):
             Chain()
             mock_groq.assert_called_once_with(
-                model="llama-3.1-70b-versatile",
+                model="llama-3.3-70b-versatile",  # updated
                 groq_api_key="fake-api-key",
             )

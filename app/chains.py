@@ -1,4 +1,5 @@
 import os
+from turtle import st
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
@@ -8,9 +9,14 @@ load_dotenv()
 
 class Chain:
     def __init__(self):
+        try:
+            api_key = st.secrets["GROQ_API_KEY"]
+        except Exception:
+            api_key = os.getenv("GROQ_API_KEY")
+
         self.llm = ChatGroq(
-            model="llama-3.3-70b-versatile",   # ← current production model
-            groq_api_key=os.getenv("GROQ_API_KEY"),
+            model="llama-3.3-70b-versatile",
+            groq_api_key=api_key,
         )
 
     def extract_job_requirements(self, cleaned_text: str) -> dict:

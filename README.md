@@ -4,6 +4,9 @@ CareerLens helps job seekers instantly understand how well they fit any role.
 Paste a job posting URL and get a semantic gap analysis + tailored cover letter,
 powered by Llama 3.1 and vector search.
 
+## Live Demo
+[careerlens-yourname.streamlit.app](https://careerlens-mrpxw67vhujwkvjd27xxvt.streamlit.app)
+
 ## Architecture
 Job URL → WebLoader → Llama 3.1 (extract skills) → ChromaDB (semantic match) → Gap Analysis + Cover Letter
 

@@ -1,0 +1,7 @@
+.env
+venv/
+vectorstore/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/

@@ -1,0 +1,9 @@
+langchain
+langchain-groq
+langchain-community
+chromadb
+streamlit
+python-dotenv
+pandas
+pytest
+pytest-mock

@@ -9,7 +9,7 @@ load_dotenv()
 class Chain:
     def __init__(self):
         self.llm = ChatGroq(
-            model="llama-3.1-70b-versatile",
+            model="llama-3.3-70b-versatile",   # ← current production model
             groq_api_key=os.getenv("GROQ_API_KEY"),
         )
 

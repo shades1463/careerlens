@@ -21,7 +21,7 @@ Job URL → WebLoader → Llama 3.1 (extract skills) → ChromaDB (semantic matc
 
 ### 1. Clone and install
 \`\`\`bash
-git clone https://github.com/YOUR_USERNAME/careerlens.git
+git clone https://github.com/shades1463/careerlens.git
 cd careerlens
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
